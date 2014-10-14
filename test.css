@@ -94,8 +94,6 @@ header {
   display: block;
   text-align: center;
   background: white;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   padding: 8px 0px;
   z-index: 2;
@@ -106,6 +104,8 @@ header {
   color: black;
   width: 550px;
   max-width: 100%;
+ margin-left: auto;
+  margin-right: auto;
   padding: 0px 8px;
   z-index: 1;
 }
