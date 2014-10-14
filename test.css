@@ -100,14 +100,19 @@ header {
 }
 
 .contentBlock {
+  position: relative;
   display: block;
   color: black;
   width: 550px;
   max-width: 100%;
- margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   padding: 0px 8px;
   z-index: 1;
+}
+
+.contentBlock span {
+  padding: 0px 8px;
 }
 
 .colorBar {
