@@ -53,10 +53,11 @@ header {
 }
 
 body {
-  height: 100% 66%;
+  height: 66%;
   background-position: top top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 66%;
 }
 
 @media screen and (min-device-width: 480px) {
