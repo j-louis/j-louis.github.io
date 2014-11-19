@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    <meta name="author" content="{{ site.author }}" />
+    <title>{% if page.title %}{{ page.title }} -- {% endif %}{{ site.name }} -- {{ site.description }}</title>
+    <meta name="author" content="{{ site.author }}">
 
     <meta name="description" content="{{ site.description }}">
 
@@ -16,37 +16,60 @@
     <![endif]-->
 
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="alternate" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
+    <link rel="alternate" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml">
     
   </head>
 
-  <body>
-    <header>
-      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+  <body style="background-image: url('{{ site.baseurl }}{{ site.imageDir }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.defaultCover }}{% endif %}');" onLoad="document.body.style.backgroundSize = '100% ' + ( 0.66 * document.body.clientHeight ).toString() + 'px'; document.body.style.height = ( 0.66 * document.body.clientHeight ).toString() + 'px';">
+    <header class="cover">
       
-      <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-        <p class="site-description">{{ site.description }}</p>
+      <div class="coverCenterfold noclick">
+        <div class="coverTitle">
+          {{ page.title }}
+        </div>
+        <div class="coverDescription">
+          {{ page.desc }}
+        </div>
+        <div class="coverDescription">
+           
+        </div>
       </div>
       
-      <nav>
-        <a href="{{ site.baseurl }}/">Blog</a>
-        <a href="{{ site.baseurl }}/about">About</a>
-      </nav>
-    </header>
-
-
+      <div class="navTop">
+        <div class="navTopLeft">
+          <div class="navInfoItem" >
+            <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ site.logo }}" alt="j"></a>
+        </div> 
+          <div class="navInfoItem noclick">
+          |
+          </div> 
+        <div class="navInfoItem noclick">
+          by {{ site.author }}
+        </div> 
+      </div>
+      <div class="navTopRight">
+        <div class="navMenuItem">
+          <a href="{{ site.url }}" title="Home">Home</a>
+          </div>
+        <div class="navMenuItem">
+          <a href="{{ site.url }}/about.html" title="Still Home">About</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="coverCopyright noclick">
+      {% if page.copyright %}{{ page.copyright }}{% endif %}{% if page.cover %}{% else %}{{ site.defaultCopyright }}{% endif %}
+    </div>
+    
+  </header>
+  
+  <div class="colorBar"></div>
+  
+  <div class="content">
+    
     <div id="main" role="main" class="content">
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
     </div>
 
     {% include analytics.html %}

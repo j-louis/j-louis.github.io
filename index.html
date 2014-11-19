@@ -1,18 +1,24 @@
 ---
 layout: default
+cover: bg_disco_vortex.png
+copyright:
+title: Rhythm is a Dancer
+desc: The cake is a lie.
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+{% for post in site.posts %}
+  <article class="contentBlock">    
+    
+    <div class="smallTitle">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
+    {{ post.content | truncatewords:55}}
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  {% endfor %}
-</div>
+
+    <div class="barDiv">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="barDivText">Read More</a>
+    </div>
+    
+{% endfor %}
