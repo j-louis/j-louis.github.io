@@ -13,6 +13,6 @@ So yeah…, I’m definitely more tired than yesterday. Last night was a little 
 
 
 - Lemons shouldn’t have any sugar. They’re too freaking sour.
-    - All roads should be paved with bricks.
- - Cracking eggs with one hand is fun.
+  * All roads should be paved with bricks.
+  - Cracking eggs with one hand is fun.
    - Ronald McDonald is a creep.
