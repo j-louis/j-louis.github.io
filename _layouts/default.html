@@ -23,7 +23,40 @@
 
   <body style="background-image: url('{{ site.baseurl }}{{ site.imageDir }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.defaultCover }}{% endif %}');" onLoad="document.body.style.backgroundSize = '100% ' + ( 0.66 * document.body.clientHeight ).toString() + 'px'; document.body.style.height = ( 0.66 * document.body.clientHeight ).toString() + 'px';">
     <header class="cover">
-      
+      <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg3368"
+   height="64"
+   width="64">
+  <defs
+     id="defs3370" />
+  <metadata
+     id="metadata3373">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       id="path4180"
+       d="M 32 0.71289062 A 31.287329 31.287329 0 0 0 0.71289062 32 A 31.287329 31.287329 0 0 0 32 63.287109 A 31.287329 31.287329 0 0 0 32.099609 63.283203 L 1.4550781 33.726562 L 20 33.818359 L 20 4 L 45.636719 4.5449219 L 45.636719 33.726562 L 62.544922 33.726562 L 32.224609 63.279297 A 31.287329 31.287329 0 0 0 63.287109 32 A 31.287329 31.287329 0 0 0 32 0.71289062 z "
+       style="fill:#ffffff;fill-opacity:0.8627451;stroke:#ffffff;stroke-width:1.42534328;stroke-opacity:1;marker-end:" />
+  </g>
+</svg>
+
       <div class="coverCenterfold noclick">
         <div class="coverTitle">
           {{ page.title }}
