@@ -1,0 +1,13 @@
+---
+layout: post
+cover: bg_disco_tech.gif
+title: Our Lives Are Not Our Own
+---
+
+I heard an interesting quote the other day. A quote I had heard before but never really given that much thought until now. It’s a quote from the movie Cloud Atlas. “Our lives are not our own.” I’ve seen Cloud Atlas a couple of times, and I think I have convinced myself that I like that movie. Apart from being horribly difficult to follow the storyline, I find the vagueness and uncertainty of its plot refreshing. Now if you have seen Cloud Atlas, there is a very good chance you thoroughly hated it. For obvious reasons I won’t get into in depth, it is a movie that demands a cult following but nothing more. So as I would quote this line in different conversations, somewhat ironically, I found myself stumbling about what it would look like to embody this group of words (which in all likelihood were probably thrown together for the sole purpose of confusing people).
+
+Our lives are not our own.
+
+What does it look like for someone to live a life for something other than themselves. Initially, I thought wholesome things would pop into my head. Words like selflessness, stewardship seemed like obvious choices. But when I really tried to picture someone living out this idea, the scene quickly darkened. I pictured drug addicts desperately seeking to maintain a lifestyle that hinged upon being dependent on a chemical. Prostitutes conceding their bodies to be dispensable to the next Smoe to walk up to them. Terrorist murderers who in their minds are heroes to be praised on behalf of some junk god that doesn’t exist. Boy….that escalated quickly.
+
+The problem is that we as individuals can devote our lives to literally anything, whether it be another person or some bigger cause. I think people tend to devote themselves to other things for many different reasons. For some it may result from a sense of personal inadequacy, a wanting of fulfillment, or a desire to be part of something more significant than they can muster on their own. On the other side, we can ignore this idea and live our lives completely for ourselves. Many people may consider this to ultimately yield a life that is more enjoyable. Personally, I think that is bush-league. Realizing my life is not my own forces me to see in a perspective other than my horribly nearsighted one. It allows me to devote my work to something that will break from the proximity of my personal bubble. But then I begin to wonder…as I look at the devastation that is caused by people who are devoting their lives to things other than themselves but are still trash, maybe it would be better if they just lived a bush-league life and nothing more.
