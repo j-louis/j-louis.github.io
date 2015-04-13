@@ -65,9 +65,6 @@ body {
     height: 100% !important;
     background-size: 100% 100% !important;
   }
-  .coverArrow {
-    //display: block !important;
-  }
 }
 
 .coverCenterfold {
@@ -116,7 +113,17 @@ body {
   margin-right: -50%;
   transform: translate(-50%, 0%);
   width: 3em;
+  transition: opacity .1s ease-in;
+ -moz-transition: opacity .1s ease-in;
+ -webkit-transition: opacity .1s ease-in;
   opacity: 0.75;
+}
+
+.coverArrow:hover {
+ transition: opacity .25s ease-in;
+ -moz-transition: opacity .25s ease-in;
+ -webkit-transition: opacity .25s ease-in;
+  opacity: 0.95;
 }
 
 .navTop {
@@ -136,20 +143,24 @@ body {
   display: table-cell;
   vertical-align: middle;
   word-wrap: break-word;
+  font-weight: bold;
   color: rgba( 255, 255, 255, 0.65 );
-  text-shadow: 1px 1px rgba( 0, 0, 0, 0.65 );
+  text-shadow: 1px 1px 6px rgba( 0, 0, 0, 0.45 );
   padding: 0px 2px;
 }
 .navInfoItem img{
   max-width: 2.5em;
+  transition: opacity .1s ease-in;
+ -moz-transition: opacity .1 ease-in;
+ -webkit-transition: opacity .1s ease-in;
   opacity: 0.65;
 }
 
 .navInfoItem img:hover, .navTopRight:hover {
-  opacity: 0.8;
-   transition: opacity .25s ease-in;
-   -moz-transition: opacity .25s ease-in;
-   -webkit-transition: opacity .25s ease-in;
+  transition: opacity .25s ease-in;
+ -moz-transition: opacity .25s ease-in;
+ -webkit-transition: opacity .25s ease-in;
+ opacity: 0.8;
 }
 
 .navTopRight {
@@ -162,6 +173,9 @@ body {
   right: 0px;
   margin: 3px;
   padding: 1px 8px;
+    transition: opacity .1s ease-in;
+ -moz-transition: opacity .1s ease-in;
+ -webkit-transition: opacity .1s ease-in;
   opacity: 0.65;
 }
 
@@ -169,6 +183,54 @@ body {
   display: table-row;
   word-wrap: break-word;
 }
+
+.navTypeText {
+  width: 7em;
+}
+  
+.navTypeText .typeTextStroke {
+  fill-opacity: 0;
+  stroke: rgba( 255, 255, 255, 0.85);
+  stroke-width: 6;
+}
+
+.typeText {
+  display: inline-block;
+  vertical-align: sub;  //baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+}
+
+.typeTextStroke {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 5s linear forwards;
+  -webkit-animation: draw 8s linear forwards;
+  -moz-animation: draw 8s linear forwards;
+  -o-animation: draw 8s linear forwards;
+  font-weight: bold;
+  font-family: Amatic SC;
+  //-inkscape-font-specification: Amatic SC Bold";
+}
+  @keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    }
+  }
+  @-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    }
+  }
+  @-moz-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    }
+  }
+  @-o-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    }
+  }
+        
 
 .content {
   position: absolute;
@@ -199,8 +261,6 @@ body {
   width: 100%;
   height: 2px;
   background-color: rgba( 150, 255, 200, 1 );
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
 }
 
 .barDiv {
