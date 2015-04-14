@@ -1,24 +1,24 @@
-@media screen and (min-device-width: 480px) {
-  #main {
-    //display: block !important;
-  }
-}
-
-#main {
+ #main {
   position: absolute;
-  //display: none;
+  /*display: none;*/
   bottom: 1%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0%);
-  width: 3em;
+  width: 5% !important;
+  height: 5% !important;
+ }
+ 
+ #allLayers {
+    width: 5% !important;
+  height: 5% !important;
   transition: opacity .1s ease-in;
  -moz-transition: opacity .1s ease-in;
  -webkit-transition: opacity .1s ease-in;
   opacity: 0.75;
 }
 
-#main:hover {
+#allLayers:hover {
  transition: opacity .25s ease-in;
  -moz-transition: opacity .25s ease-in;
  -webkit-transition: opacity .25s ease-in;
