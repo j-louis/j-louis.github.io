@@ -105,27 +105,15 @@ body {
   margin: 2px 4px;
 }
 
-.coverArrow {
+.downArrowContainer {
   position: absolute;
-  //display: none;
+  /*display: none;*/
   bottom: 1%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0%);
-  width: 3em;
-  transition: opacity .1s ease-in;
- -moz-transition: opacity .1s ease-in;
- -webkit-transition: opacity .1s ease-in;
-  opacity: 0.75;
+  width: 10%
 }
-
-.coverArrow:hover {
- transition: opacity .25s ease-in;
- -moz-transition: opacity .25s ease-in;
- -webkit-transition: opacity .25s ease-in;
-  opacity: 0.95;
-}
-
 .navTop {
   position: relative;
   padding: 4px;
