@@ -137,7 +137,7 @@ body {
   padding: 0px 2px;
 }
 .navInfoItem img{
-  max-width: 2.5em;
+  max-height: 2.5em;
   transition: opacity .1s ease-in;
  -moz-transition: opacity .1 ease-in;
  -webkit-transition: opacity .1s ease-in;
@@ -174,9 +174,8 @@ body {
 
 .navTypeText {
   width: 9em;
-  height: 0px;
+  height: 1.25em;
   vertical-align: sub;  //baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
-
 }
 
 .content {
