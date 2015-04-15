@@ -1,7 +1,7 @@
 .typeText {
   fill-opacity: 0;
   stroke: rgba( 255, 255, 255, 0.85);
-  stroke-width: 0.35em;
+
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
   animation: draw 5s linear forwards;
