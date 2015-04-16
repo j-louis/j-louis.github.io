@@ -1,1 +1,8 @@
+;name     ttl   class rr     value 
+server01  30m   IN    A      192.168.0.3
+server02  30m   IN    A      192.168.0.4
 
+webmail   24h   IN    CNAME  server01
+extranet  24h   IN    CNAME  server02
+ftp       24h   IN    CNAME  server02
+a         24h   IN    CNAME  github.com
