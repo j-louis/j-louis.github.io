@@ -1,0 +1,681 @@
+/***************/
+/* MEYER RESET */
+/***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  #font-size: 100%;
+  #font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  #list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  #font-size: 100%;
+  #font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Garamond, Georgia, serif;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+body {
+  height: 66%;
+  background-position: top top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 66%;
+}
+
+@media screen and (min-device-width: 480px) {
+  body {
+    height: 100% !important;
+    background-size: 100% 100% !important;
+  }
+}
+.coverCenterfold {
+  position: absolute;
+  display: table;
+  margin: 0px;
+  max-width: 0px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.coverTitle {
+  display: table-row;
+  text-align: left;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
+  font-size: 250%;
+  white-space: nowrap;
+}
+
+.coverDescription {
+  display: table-row;
+  font-size: 100%;
+  text-align: justify;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
+  word-wrap: break-word;
+}
+
+.coverCopyright {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  text-shadow: 1px 1px black;
+  bottom: 0px;
+  right: 0px;
+  margin: 2px 4px;
+}
+
+.downArrowContainer {
+  position: absolute;
+  /*display: none;*/
+  bottom: 1%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+  width: 3em;
+}
+
+.navTop {
+  position: relative;
+  padding: 4px;
+  vertical-align: middle;
+}
+
+.navTopLeft {
+  display: table-cell;
+  font-size: 22px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.navInfoItem {
+  display: table-cell;
+  vertical-align: middle;
+  word-wrap: break-word;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.65);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+  padding: 0px 2px;
+}
+
+.navInfoItem img {
+  max-height: 2.5em;
+  transition: opacity .1s ease-in;
+  -moz-transition: opacity .1 ease-in;
+  -webkit-transition: opacity .1s ease-in;
+  opacity: 0.65;
+}
+
+.navInfoItem img:hover, .navTopRight:hover {
+  transition: opacity .25s ease-in;
+  -moz-transition: opacity .25s ease-in;
+  -webkit-transition: opacity .25s ease-in;
+  opacity: 0.8;
+}
+
+.navTopRight {
+  display: table-cell;
+  font-size: 30px;
+  border-radius: 5px;
+  background: white;
+  text-align: right;
+  width: 1%;
+  right: 0px;
+  margin: 3px;
+  padding: 1px 8px;
+  transition: opacity .1s ease-in;
+  -moz-transition: opacity .1s ease-in;
+  -webkit-transition: opacity .1s ease-in;
+  opacity: 0.65;
+}
+
+.navMenuItem {
+  display: table-row;
+  word-wrap: break-word;
+}
+
+.navTypeText {
+  width: 9em;
+  height: 1.25em;
+  vertical-align: sub;
+}
+
+.content {
+  position: absolute;
+  display: block;
+  text-align: center;
+  background: white;
+  width: 100%;
+  z-index: 2;
+}
+
+.contentBlock {
+  position: relative;
+  display: block;
+  color: black;
+  max-width: 800px;
+  margin: auto;
+  padding: 5px;
+  z-index: 1;
+}
+
+.left {
+  text-align: left;
+}
+
+.colorBar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #96ffc8;
+}
+
+.barDiv {
+  position: relative;
+  text-align: center;
+  line-height: 1em;
+  opacity: 0.83;
+  padding-bottom: 10px;
+}
+
+.barDiv:before {
+  position: absolute;
+  display: block;
+  background-color: white;
+  opacity: 0.33;
+  top: 35%;
+  width: 100%;
+  max-width: 100%;
+  border-top: 1px solid black;
+  content: '';
+}
+
+.barDivText {
+  position: relative;
+  display: inline-block;
+  font-size: 0.66em;
+  text-transform: uppercase;
+  opacity: 1;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0.2em 0.7em 0.2em 0.7em;
+}
+
+.smallTitle {
+  font-size: 2em;
+  color: black;
+}
+
+.noclick {
+  pointer-events: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #635147;
+}
+
+a:link, a:hover, a:active, a:focus {
+  color: #8a3324;
+}
+
+/***********************/
+/* SYNTAX HIGHLIGHTING */
+/***********************/
+.highlight {
+  background-color: #222;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+
+.highlight pre {
+  /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+code {
+  font-family: 'Courier', monospace;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Comment */
+.highlight .c, .highlight .c1 {
+  color: #586E75;
+}
+
+/* Error */
+.highlight .err {
+  color: #93A1A1;
+}
+
+/* Generic */
+.highlight .g {
+  color: #93A1A1;
+}
+
+/* Keyword */
+.highlight .k {
+  color: #859900;
+}
+
+/* Literal */
+.highlight .l {
+  color: #93A1A1;
+}
+
+/* Name */
+.highlight .n {
+  color: #93A1A1;
+}
+
+/* Operator */
+.highlight .o {
+  color: #859900;
+}
+
+/* Other */
+.highlight .x {
+  color: #CB4B16;
+}
+
+/* Punctuation */
+.highlight .p {
+  color: #93A1A1;
+}
+
+/* Comment.Multiline */
+.highlight .cm {
+  color: #586E75;
+}
+
+/* Comment.Preproc */
+.highlight .cp {
+  color: #859900;
+}
+
+/* Comment.Single */
+.highlight .c1 {
+  color: #586E75;
+}
+
+/* Comment.Special */
+.highlight .cs {
+  color: #859900;
+}
+
+/* Generic.Deleted */
+.highlight .gd {
+  color: #2AA198;
+}
+
+/* Generic.Emph */
+.highlight .ge {
+  color: #93A1A1;
+  font-style: italic;
+}
+
+/* Generic.Error */
+.highlight .gr {
+  color: #DC322F;
+}
+
+/* Generic.Heading */
+.highlight .gh {
+  color: #CB4B16;
+}
+
+/* Generic.Inserted */
+.highlight .gi {
+  color: #859900;
+}
+
+/* Generic.Output */
+.highlight .go {
+  color: #93A1A1;
+}
+
+/* Generic.Prompt */
+.highlight .gp {
+  color: #93A1A1;
+}
+
+/* Generic.Strong */
+.highlight .gs {
+  color: #93A1A1;
+  font-weight: bold;
+}
+
+/* Generic.Subheading */
+.highlight .gu {
+  color: #CB4B16;
+}
+
+/* Generic.Traceback */
+.highlight .gt {
+  color: #93A1A1;
+}
+
+/* Keyword.Constant */
+.highlight .kc {
+  color: #CB4B16;
+}
+
+/* Keyword.Declaration */
+.highlight .kd {
+  color: #268BD2;
+}
+
+/* Keyword.Namespace */
+.highlight .kn {
+  color: #859900;
+}
+
+/* Keyword.Pseudo */
+.highlight .kp {
+  color: #859900;
+}
+
+/* Keyword.Reserved */
+.highlight .kr {
+  color: #268BD2;
+}
+
+/* Keyword.Type */
+.highlight .kt {
+  color: #DC322F;
+}
+
+/* Literal.Date */
+.highlight .ld {
+  color: #93A1A1;
+}
+
+/* Literal.Number */
+.highlight .m {
+  color: #2AA198;
+}
+
+/* Literal.String */
+.highlight .s {
+  color: #2AA198;
+}
+
+/* Name.Attribute */
+.highlight .na {
+  color: #93A1A1;
+}
+
+/* Name.Builtin */
+.highlight .nb {
+  color: #B58900;
+}
+
+/* Name.Class */
+.highlight .nc {
+  color: #268BD2;
+}
+
+/* Name.Constant */
+.highlight .no {
+  color: #CB4B16;
+}
+
+/* Name.Decorator */
+.highlight .nd {
+  color: #268BD2;
+}
+
+/* Name.Entity */
+.highlight .ni {
+  color: #CB4B16;
+}
+
+/* Name.Exception */
+.highlight .ne {
+  color: #CB4B16;
+}
+
+/* Name.Function */
+.highlight .nf {
+  color: #268BD2;
+}
+
+/* Name.Label */
+.highlight .nl {
+  color: #93A1A1;
+}
+
+/* Name.Namespace */
+.highlight .nn {
+  color: #93A1A1;
+}
+
+/* Name.Other */
+.highlight .nx {
+  color: #555;
+}
+
+/* Name.Property */
+.highlight .py {
+  color: #93A1A1;
+}
+
+/* Name.Tag */
+.highlight .nt {
+  color: #268BD2;
+}
+
+/* Name.Variable */
+.highlight .nv {
+  color: #268BD2;
+}
+
+/* Operator.Word */
+.highlight .ow {
+  color: #859900;
+}
+
+/* Text.Whitespace */
+.highlight .w {
+  color: #93A1A1;
+}
+
+/* Literal.Number.Float */
+.highlight .mf {
+  color: #2AA198;
+}
+
+/* Literal.Number.Hex */
+.highlight .mh {
+  color: #2AA198;
+}
+
+/* Literal.Number.Integer */
+.highlight .mi {
+  color: #2AA198;
+}
+
+/* Literal.Number.Oct */
+.highlight .mo {
+  color: #2AA198;
+}
+
+/* Literal.String.Backtick */
+.highlight .sb {
+  color: #586E75;
+}
+
+/* Literal.String.Char */
+.highlight .sc {
+  color: #2AA198;
+}
+
+/* Literal.String.Doc */
+.highlight .sd {
+  color: #93A1A1;
+}
+
+/* Literal.String.Double */
+.highlight .s2 {
+  color: #2AA198;
+}
+
+/* Literal.String.Escape */
+.highlight .se {
+  color: #CB4B16;
+}
+
+/* Literal.String.Heredoc */
+.highlight .sh {
+  color: #93A1A1;
+}
+
+/* Literal.String.Interpol */
+.highlight .si {
+  color: #2AA198;
+}
+
+/* Literal.String.Other */
+.highlight .sx {
+  color: #2AA198;
+}
+
+/* Literal.String.Regex */
+.highlight .sr {
+  color: #DC322F;
+}
+
+/* Literal.String.Single */
+.highlight .s1 {
+  color: #2AA198;
+}
+
+/* Literal.String.Symbol */
+.highlight .ss {
+  color: #2AA198;
+}
+
+/* Name.Builtin.Pseudo */
+.highlight .bp {
+  color: #268BD2;
+}
+
+/* Name.Variable.Class */
+.highlight .vc {
+  color: #268BD2;
+}
+
+/* Name.Variable.Global */
+.highlight .vg {
+  color: #268BD2;
+}
+
+/* Name.Variable.Instance */
+.highlight .vi {
+  color: #268BD2;
+}
+
+/* Literal.Number.Integer.Long */
+.highlight .il {
+  color: #2AA198;
+}
